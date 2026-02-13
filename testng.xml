@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+
+    <test name="Herokuapp Test">
+        <parameter name="url" value="https://the-internet.herokuapp.com/login"/>
+
+        <classes>
+            <class name="TestNG.Assertion_testNG">
+                <methods>
+                    <include name="Assertioneqals"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+<test name="google Test">
+        <parameter name="url" value="https://www.google.com/"/>
+
+        <classes>
+            <class name="TestNG.Assertion_testNG">
+                <methods>
+                    <include name="Assertiontrue"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Herokuapp Test1">
+        <parameter name="url" value="https://the-internet.herokuapp.com/login"/>
+
+        <classes>
+            <class name="TestNG.Assertion_testNG">
+                <methods>
+                    <include name="assertFalse"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Herokuapp Test2">
+        <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+
+        <classes>
+            <class name="TestNG.Assertion_testNG">
+                <methods>
+                    <include name="assertionnotNull"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
